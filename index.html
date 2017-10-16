@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Material Design Bootstrap</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Template styles -->
+    <style rel="stylesheet">
+        /* TEMPLATE STYLES */
+        /* Necessary for full page carousel*/
+        
+        html,
+        body {
+            height: 100%;
+        }
+        /* Navigation*/
+        
+        .navbar {
+            background-color: transparent;
+        }
+        
+        .top-nav-collapse {
+            background-color: #304a74;
+        }
+        
+        footer.page-footer {
+            background-color: #304a74;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                background-color: #4285F4;
+            }
+        }
+        
+        .scrolling-navbar {
+            -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            transition: background .5s ease-in-out, padding .5s ease-in-out;
+        }
+        /* Carousel*/
+        
+        .carousel {
+            height: 50%;
+        }
+        
+        @media (max-width: 776px) {
+            .carousel {
+                height: 100%;
+            }
+        }
+        
+        .carousel-item,
+        .active {
+            height: 100%;
+        }
+        
+        .carousel-inner {
+            height: 100%;
+        }
+        /*Caption*/
+        
+        .flex-center {
+            color: #fff;
+        }
+        
+        .navbar .btn-group .dropdown-menu a:hover {
+            color: #000 !important;
+        }
+        
+        .navbar .btn-group .dropdown-menu a:active {
+            color: #fff !important;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img alt="@TurtleWolf" class="avatar float-left mr-1" src="https://avatars2.githubusercontent.com/u/7327259?s=40&amp;v=4" height="30" width="30"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#page3">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#page2">Pricing</a>
+                    </li>
+                    <li class="nav-item btn-group">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown 
+                            </a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#page4">Comments</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--/.Navbar-->
+
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-3" class="carousel slide carousel-fade white-text" data-ride="carousel" data-interval="false">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-3" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-3" data-slide-to="1"></li>
+            <li data-target="#carousel-example-3" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <!-- First slide -->
+            <div class="carousel-item active view hm-black-light" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(11).jpg'); background-repeat: no-repeat; background-size: cover;">
+                <!-- Caption -->
+                <div class="full-bg-img flex-center white-text">
+                    <ul class="animated fadeIn col-md-12">
+                        <li>
+                            <h1 class="h1-responsive">20 Photos to inspire you to visit Tatra Mountains</h1>
+                        </li>
+                        <li>
+                            <p>Best places you should see, traditional dishes that you have to try</p>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-info btn-lg" rel="nofollow">See more!</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.Caption -->
+
+            </div>
+            <!--/.First slide-->
+
+            <!-- Second slide -->
+            <div class="carousel-item view hm-black-light" style="background-image: url('https://mdbootstrap.com/img/Photos/Slides/img%20(67).jpg'); background-repeat: no-repeat; background-size: cover;">
+
+                <!-- Caption -->
+                <div class="full-bg-img flex-center white-text">
+                    <ul class="animated fadeIn col-md-12">
+                        <li>
+                            <h1 class="h1-responsive">10 Reasons you should spend winter holiday in mountains </h1>
+                        </li>
+                        <li>
+                            <p>Best atractions and winter sports!</p>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-info btn-lg" rel="nofollow">Read more</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.Caption -->
+
+            </div>
+            <!--/.Second slide -->
+
+            <!-- Third slide -->
+            <div class="carousel-item view hm-black-light" style="background-image: url('https://mdbootstrap.com/img/Photos/Slides/img%20(97).jpg'); background-repeat: no-repeat; background-size: cover;">
+
+                <!-- Caption -->
+                <div class="full-bg-img flex-center white-text">
+                    <ul class="animated fadeIn col-md-12">
+                        <li>
+                            <h1 class="h1-responsive">Weekend in the nature - the best way to relax</h1>
+                        </li>
+                        <li>
+                            <p>8 Reasons why you need to spend more time in nature</p>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://mdbootstrap.com/forums/forum/support/" class="btn btn-default btn-lg" rel="nofollow">Read more</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.Caption -->
+
+            </div>
+            <!--/.Third slide-->
+        </div>
+        <!--/.Slides-->
+
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-3" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-3" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+    <a id="page2"></a>
+    <br>
+
+    <!--Content-->
+
+    <div class="container">
+        <div class="row my-5">
+            <!--First columnn-->
+            <div class="col-lg-4">
+                <!--Card-->
+                <div class="card wow fadeIn" data-wow-delay="0.2s">
+
+                    <!--Card image-->
+                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(120).jpg" alt="Card image cap">
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title"><i class="fa fa-briefcase" aria-hidden="true"></i> Business apps starting at <i class="fa fa-dollar" aria-hidden="true"></i>1250</h4>
+                        <!--Text-->
+                        <p class="card-text text-justify">Create, Read, Update & Delete. Several JavasScript or PHP frameworks are available as OpenSource, allowing us to focus on customizing the interface to get information in and out of your database. Traditionaly this type of app should cover ninety percent of business case senarios.</p>
+                    </div>
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+
+            <!--Second columnn-->
+            <div class="col-lg-4">
+                <!--Card-->
+                <div class="card wow fadeIn" data-wow-delay="0.4s">
+
+                    <!--Card image-->
+                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(123).jpg" alt="Card image cap">
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title"><i class="fa fa-globe" aria-hidden="true"></i> standard sites <i class="fa fa-dollar" aria-hidden="true"></i>100</h4>
+                        <!--Text-->
+                        <p class="card-text text-justify">The most challenging part is getting your
+                            <a href="https://en.wikipedia.org/wiki/URL">Uniform Resource Locator (URL)</a> You can search & purchase at <a href="https://domains.google/?gclid=EAIaIQobChMIpq2X4Ozn1gIVE1qGCh1Tswe7EAAYASAAEgKfXvD_BwE&dclid=CIz-zefs59YCFUwJgQodcc8Biw#/?utm_source=google&utm_medium=cpc&utm_campaign=na-US-all-en-dr-bkws-all-all-trial-b-dr-1001418&utm_content=text-ad-none-any-DEV_c-CRE_212485976092-ADGP_%5B*Adgroup*%5D-KWID_%5B*TrackerID*%5D-kwd-301582914651&utm_term=KW_%2Bgoogle%20%2Bdomains-ST_%5B*searchterm*%5D">GoogleDomains.com,</a> this does not include hosting.. there are several options to be considered, mostly in the cloud.. Azure, Digital Oceans etc..</p>
+                    </div>
+
+                </div>
+                <!--/.Card-->
+
+            </div>
+            <!--Second columnn-->
+
+            <!--Third columnn-->
+            <div class="col-lg-4 mb-4">
+                <!--Card-->
+                <div class="card wow fadeIn" data-wow-delay="0.6s">
+
+                    <!--Card image-->
+                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(122).jpg" alt="Card image cap">
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title"><i class="fa fa-dollar" aria-hidden="true"></i>.50 per minute <i class="fa fa-clock-o" aria-hidden="true"></i></h4>
+                        <!--Text-->
+                        <p class="card-text text-justify">Version updates to your app or just quick touch ups highlighting a sale on your web site.</p>
+                    </div>
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Third columnn-->
+        </div>
+    </div>
+    <!--/.Content-->
+
+    <a id="page3"></a>
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--First column-->
+                <div class="col-lg-3 col-md-6 ml-auto">
+                    <h5 class="title font-bold mt-3 mb-4">BROADCAST LIVE</h5>
+                    <p class="card-text text-justify">I record & broadcast my desktop live at <strong><a href="https://www.twitch.tv/turtlewolfe"><i class="fa fa-twitch" aria-hidden="true"></i>Twitch.tv</a></strong> while I work. I can clip out playlists elaborating on features of the software as they are crafted. This has more advantages than I first anticipated, from documentation to double checking what I thought I did or communication with future programmers.</p>
+                </div>
+                <!--/.First column-->
+
+                <hr class="w-100 clearfix d-sm-none">
+
+                <!--Second column-->
+                <div class="col-lg-2 col-md-6 ml-auto">
+                    <h5 class="title font-bold mt-3 mb-4"><i class="fa fa-file-code-o" aria-hidden="true"></i> samples</h5>
+                    <ul>
+                        <li><a href="http://geolarp.com">GeoLARP.com</a></li>
+                        <li><a href="https://jsfiddle.net/TurtleWolf/QUg53/">PaperRockScissors</a></li>
+                        <li><a href="http://pohlnerlandscaping.com">PohlnerLandscaping.com</a></li>
+                        <li><a href="http://resume.turtlewolfe.com">resume.TurtleWolfe.com</a></li>
+                        <li><a href="https://codepen.io/TurtleWolf/pen/xrWxGg">Simon</a></li>
+                        <li><a href="#!">Tree Into Space</a></li>
+                        <li><a href="#!">Unity 3D VR</a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+
+                <hr class="w-100 clearfix d-sm-none">
+
+                <!--Third column-->
+                <div class="col-lg-2 col-md-6 ml-auto">
+                    <h5 class="title font-bold mt-3 mb-4"><i class="fa fa-film" aria-hidden="true"></i> playlists</h5>
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=bv6Fg3pKlqc">"GIMP"</a></li>
+                        <li><a href="https://www.youtube.com/playlist?list=PLETG2T1KvnioI_uRwEx1-efEI6EpoN_ZR">"MEAN CRUD 2500 Minutes"</a></li>
+                        <li><a href="https://youtu.be/J4zFtqHq2F4">"PreDesign, Consultation for a site"</a></li>
+                    </ul>
+                </div>
+                <!--/.Third column-->
+
+                <hr class="w-100 clearfix d-sm-none">
+
+                <!--Fourth column-->
+                <div class="col-lg-2 col-md-6 ml-auto">
+                    <h5 class="title font-bold mt-3 mb-4"><i class="fa fa-address-card-o" aria-hidden="true"></i> social</h5>
+                    <ul>
+                        <li><a href="https://codepen.io/TurtleWolf/"><i class="fa fa-codepen" aria-hidden="true"></i> CodePen</a>
+                        </li>
+                        <li><a href="https://www.facebook.com/groups/266866570176327/"><i class="fa fa-facebook-official" aria-hidden="true"></i> DangerousMinds</a>
+                        </li>
+                        <li><a href="https://www.facebook.com/turtlew0lf"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
+                        <li><a href="https://www.freecodecamp.org/turtlewolf"><i class="fa fa-free-code-camp" aria-hidden="true"></i> FreeCodeCamp</a></li>
+                        <li><b><a href="https://github.com/TurtleWolf"><i class="fa fa-github" aria-hidden="true"></i> GitHub/TW</a></b></li>
+                        <li><a href="https://plus.google.com/+JonathanPohlner"><i class="fa fa-google-plus" aria-hidden="true"></i> GooglePlus/JP</a></li>
+                        <li><a href="https://www.linkedin.com/in/turtle-wolfe-87796377/"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn/TW</a></li>
+                        <li><strong><a href="https://www.twitch.tv/turtlewolfe" class="bg-faded text-muted"><i class="fa fa-twitch" aria-hidden="true"></i> Twitch.tv/TW</a></strong></li>
+                        <li><a href="https://twitter.com/JonPohlner?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter/JP</a></li>
+                        <li><strong><a href="https://www.youtube.com/playlist?list=PLETG2T1KvnioI_uRwEx1-efEI6EpoN_ZR"><i class="fa fa-youtube-play" aria-hidden="true"></i> YouTube/TW</strong></li>
+                    </ul>
+                </div>
+                <!--/.Fourth column-->
+
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <hr>
+
+        <!--Call to action-->
+        <a id="page4"></a>
+        <div class="call-to-action">
+            <div id="disqus_thread" class="container-fluid"></div>
+            <script>
+                /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document,
+                        s = d.createElement('script');
+                    s.src = 'https://turtlewolfe.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+        <!--/.Call to action-->
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2017 Copyright: <a href="http://turtlewolfe.com/ "> http://turtlewolfe.com/  </a>
+
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script>
+        new WOW().init();
+
+    </script>
+
+</body>
+
+</html>
